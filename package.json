@@ -1,0 +1,49 @@
+{
+  "name": "mam_modale",
+  "version": "1.0.0",
+  "description": "modale component",
+  "main": "./dist/mam_modale.umd.js",
+    "module": "./dist/mam_modale.es.js",
+  "export": {
+    ".": {
+      "import": "./dist/mam_modale.es.js",
+      "require": "./dist/mam_modale.umd.js"
+    }
+  },
+   "files": [
+    "dist",
+    "README.md"
+  ],
+   "parserOptions": {
+    "sourceType": "module"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinMam/MamModale.git"
+  },
+  "author": "mam",
+  "license": "ISC",
+
+   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
+  }
+ 
+}
