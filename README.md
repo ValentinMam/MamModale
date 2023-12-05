@@ -87,26 +87,27 @@ La fenêtre modale est composé d'un CSS par défaut mais il est possible de mod
 | modalHeight | Hauteur de la modale            | pixel uniquement                               | '200px'              |
 | modalBG     | Couleur du fond de la modale    | '#00f' ou 'blue' ou 'rgb(0,0,255)              | '#fff'               |
 
-Pour une modale rouge opaque à 80%, faisant 50% de la largeur de l'écran, 300px de hauteur avec le message "Le texte de la Modale" en bleu avec une taille de 2.5em et un bouton de fermeture gris, on aura :
+Pour une modale avec le texte "Employee successfully added.", un bouton et du texte bleu #1976d2, une hauteur de 200px, une largeur de 30%...
+nous devrons écrire :
 
 ```jsx
 {
   isOpen && (
     <Modal
-      setIsOpen={setIsOpen}
-      buttonColor="gray"
-      modalWidth="50%"
-      modalHeight="300px"
-      modalBG="rgb(255,0,0,0,0.8)"
-      text="Le texte de la Modale"
-      textColor="blue"
-      textSize="2.5em"
+          setIsOpen={setIsOpen}
+          text="Employee successfully added."
+          buttonColor="#1976d2"
+          textColor="#1976d2"
+          textSize="1.5em"
+          modalWidth="30%"
+          modalHeight="200px"
+          modalBG="rgb(255,0,0,0,0.8)"
     />
   )
 }
 ```
 
-Si un des paramètres ci-dessus n'est pas transmis , la valeur par défaut sera appliquée.
+Si un des paramètres ci-dessus n'est pas mentionné , la valeur par défaut sera appliquée.
 
 
 
