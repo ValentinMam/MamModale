@@ -22,7 +22,7 @@ const StyledModale = styled.div`position: relative;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}`
+`
 
 const StyledButton = styled.button`
   width: 50px;
