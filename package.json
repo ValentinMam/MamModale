@@ -1,6 +1,6 @@
 {
   "name": "mam_modale",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "modale component",
   "main": "./dist/mam_modale.umd.js",
     "module": "./dist/mam_modale.es.js",
@@ -28,6 +28,10 @@
     "url": "git+https://github.com/ValentinMam/MamModale.git"
   },
   "author": "mam",
+   "keywords": [
+    "modal",
+    "react"
+  ],
   "license": "ISC",
 
    "dependencies": {
