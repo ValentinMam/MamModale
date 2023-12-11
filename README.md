@@ -1,18 +1,17 @@
 
 
-## Fonctionnalités
+## Features
 
-Affichage d'une fenêtre modale liée à une action utilisateur
+Display a modal window linked to a user action
 
-
-## Technologies utilisées
+## Technologies 
 
 - HTML 5 & CSS 3
 - Javascript (jsx) & REACT 18.2.0
 
 ## Test 
 
-Dans un terminal :
+In a terminal :
 
 ```
 git clone https://github.com/ValentinMam/MamModale.git 
@@ -24,42 +23,41 @@ npm install
 npm run dev
 ```
 
-Une fênetre s'ouvre en local avec le projet (App.jsx)
+A local window opens with the project (App.jsx)
 
 Edit src/App.jsx and save to test
 
 
 ## Installation 
 
-Dans un terminal :
-
+In a terminal :
 ```
 npm i mam_modale
 ```
 
-ou
+or
 
 ```
 yarn add mam_modale
 ```
 
-## Utilisation
+## Use
 
-### Dans la fonction du composant appelant la fenêtre modale :
+### In the component function calling the modal window :
 
-Importer le composant 'Modal' :
+Import the 'Modal' component :
 
 ```javascript
 import Modal from "mam_modale"
 ```
 
-Dans la fonction, initialiser le state pour l'état de la fenêtre modale (Open / no) :
+In the function, initialize the state for the modal window state (Open / No):
 
 ```jsx
 const [isOpen, setIsOpen] = useState(false)
 ```
 
-Dans le bloc `return`, insérer la ligne suivante :
+In the `return` block, insert the following line:
 
 ```jsx
 {
@@ -67,7 +65,7 @@ Dans le bloc `return`, insérer la ligne suivante :
 }
 ```
 
-Dans les props de l'élement déclencheur comme un bouton `"Open Modal"` :
+In the trigger element props as an `"Open Modal"`  button :
 
 ```html
 <button onClick={() => setIsOpen(true)}>Open Modal</button>
@@ -75,20 +73,21 @@ Dans les props de l'élement déclencheur comme un bouton `"Open Modal"` :
 
 ## Les props
 
-La fenêtre modale est composé d'un CSS par défaut mais il est possible de modifier les paramètres suivants :
+The modal window is composed of a default CSS, but the following parameters can be modified:
+
 
 | Paramètre   | Action sur                      | Format                                         | Valeur par défaut    |
 | ----------- | ------------------------------- | ---------------------------------------------- | -------------------- |
-| text        | Texte affiché dans la modale    | string                                         | 'Texte de la modale' |
-| textColor   | Couleur du texte de la modale   | '#00f' ou 'blue' ou 'rgb(0,0,255)              | '#000'               |
-| textSize    | Taille du texte de la modale    | toutes les unités de fontSize (em, rem, px...) | '3rem'               |
-| buttonColor | Couleur du bouton de fermenture | '#00f' ou 'blue' ou 'rgb(0,0,255)              | '#f00'               |
-| modalWidth  | Largeur de la modale            | pixel ou pourcentage                           | '50%'                |
-| modalHeight | Hauteur de la modale            | pixel uniquement                               | '200px'              |
-| modalBG     | Couleur du fond de la modale    | '#00f' ou 'blue' ou 'rgb(0,0,255)              | '#fff'               |
+| text        | Text displayed in the modal    | string                                         | 'Texte de la modale' |
+| textColor   | Modal text color  | '#00f' or 'blue' or 'rgb(0,0,255)             | '#000'               |
+| textSize    | Modal text size  | fontSize (em, rem, px...) | '3rem'               |
+| buttonColor | Color of closing button | '#00f' or 'blue' or 'rgb(0,0,255)             | '#f00'               |
+| modalWidth  | Modal width          | pixel or percent                    | '50%'                |
+| modalHeight | Modal height          | pixel                                | '200px'              |
+| modalBG     | Modal background color   | '#00f' or 'blue' or 'rgb(0,0,255)              | '#fff'               |
 
-Pour une modale avec le texte "Employee successfully added.", un bouton et du texte bleu #1976d2, une hauteur de 200px, une largeur de 30%...
-nous devrons écrire :
+For a modal with the text "Employee successfully added.", a button and blue text #1976d2, a height of 200px, a width of 30%...
+we'd write :
 
 ```jsx
 {
@@ -107,7 +106,6 @@ nous devrons écrire :
 }
 ```
 
-Si un des paramètres ci-dessus n'est pas mentionné , la valeur par défaut sera appliquée.
-
+If one of the above parameters is not mentioned, the default value will be applied.
 
 
